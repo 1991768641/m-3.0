@@ -1,0 +1,39 @@
+<div class="registerbox">
+
+        <header class="login-navbar">
+            <div class="nav-wrap-left">
+                <div class="loginback">
+                    <</div> </div> <h1 class="nav-header">
+                       用户注册
+                        </h1>
+        </header>
+    
+        <div class="normal-register-form">
+            <div class="register-list">
+                <div class="visibale">
+                    <div class="username">
+                        <input type="text" id="inp-username" placeholder="请输入账号"/>
+                    </div>
+                    <div class="password">
+                        <input type="password" id="inp-password" placeholder="请输入密码"/>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div class="btn-wrapper">
+                <button type="submit" class="register-btn">注册</button>
+            </div>
+    
+            <div class="login-subline">
+                <div><a class="login-now">立即登录</a></div>
+                <div><a>找回密码</a></div>
+            </div>
+    
+            <div class="kefu">
+                &copy;猫眼电影 客服电话：
+                <a>400-670-5335</a>
+            </div>
+        </div>
+    
+    </div>

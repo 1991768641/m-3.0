@@ -1,0 +1,42 @@
+<div class="close-tab">
+        <div class="tab-content">
+            <!-- 内容一 -->
+            <!-- 内容二 -->
+            <!-- 内容三 -->
+            <div class="page-region">
+                <div id="region-tab">
+                    <ul class="tab">
+                        <li class="item chosen" data-type="region" data-subnav="#district">商区</li>
+                        <li class="item" data-type="region" data-subnav="#subway">地铁站</li>
+                    </ul>
+                </div>
+
+                <div id="region-list">
+
+                    <div id="region-sidenav">
+
+                        <div id="district">
+                            {{each citylist}}
+                            <div class="district-li" data-type="line" data-id="{{$value.id}}">
+                                {{$value.name}}</div>
+                            {{/each}}
+                        </div>
+                    </div>
+
+                    <div id="region-list-item">
+                        <div id="filter-list">
+                            <!-- {{each citylist1}} -->
+                            <div class="filter-item filter-chosen">
+                                <span class="item-name"><!-- {{$value.count}} --></span>
+                                <span class="item-count"><!-- {{$value.name}} --></span>
+                            </div>
+                            <!-- {{/each}} -->
+
+                        </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>

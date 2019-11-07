@@ -1,0 +1,18 @@
+<div class="page-wrap">
+
+    <div class="list-wrap">
+
+        <div class="most-expected">
+            <p class="title">近期最受期待</p>
+            <div class="move-hot">
+                <div class="most-expected-list">
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="coming-list">
+            
+        </div>
+    </div>
+</div>

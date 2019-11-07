@@ -1,0 +1,49 @@
+<a class="down-tip"></a>
+<div class="detailbox">
+    <div class="movebox">
+
+        <div class="hideshow">
+
+        </div>
+
+        <div class="fixbox-showday">
+            <div class="show-day">
+                <ul class="itemtime">
+                    <li class="showDay chosen" data-day="">
+                        
+                    </li>
+                    <li class="showDay" data-day="">
+                       
+                    </li>
+                    <li class="showDay" data-day="">
+                        
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="nav-wrap">
+                <div class="tab">
+                    <div class="item">全城 ▼</div>
+                    <div class="item">品牌 ▼</div>
+                    <div class="item">特色 ▼</div>
+                </div>
+                <div class="close-tab">
+                    点击之后出现的遮罩
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="cinema-list">
+            <div class="detail-list-wrap">
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>

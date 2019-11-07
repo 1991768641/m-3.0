@@ -1,0 +1,48 @@
+{{each list}}
+<div class="movie-item" data-movieid="{{$value.id}}">
+    <div class="main-block">
+        <div class="avatar">
+            <img src="{{$value.img.replace(/w.h/,'128.180')}}" alt="">
+        </div>
+        <div class="content-wrap">
+            <div class="content">
+                <div class="movietitle">
+                    <div class="title">{{$value.nm}}</div>
+                    <span class="max {{$value.version}}"></span>
+                </div>
+                <div class="column">
+                    <div class="score">
+                        <span class="suffix">
+                            {{if($value.sc!=0)}}
+                                观众评分
+                            {{/if}}
+                        </span>
+                        <span class="grade">
+                            {{if($value.sc==0)}}
+                            <div class="noscore">
+                                暂无评分
+                            </div>
+                            {{else}}
+                                {{$value.sc}}
+                            {{/if}}
+                        </span>
+                    </div>
+                    <div class="actor">{{$value.star}}</div>
+                    <div class="show-info">{{$value.showInfo}}</div>
+                </div>
+            </div>
+
+            <div class="buy">
+                <div class="btn">
+                    {{if($value.globalReleased)==false}}
+                    <span class="presell">预售</span>
+                    {{else}}
+                    <span class="fix">售票</span>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{{/each}}

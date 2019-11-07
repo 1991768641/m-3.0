@@ -1,0 +1,68 @@
+<header class="navbar">
+    <div class="back">
+        <</div> <h1 class="nav-header">{{title}}</h1>
+</header>
+
+<nav data-load="download" class="download-app-bar">
+    <div class="logo-img"></div>
+    <div class="info-wrapper">
+        <div class="title">猫眼</div>
+        <div class="content">0元看电影,天天领现金</div>
+    </div>
+    <div class="link-btn">
+        <div class="word">立即领取</div>
+        <div class="wordafter"></div>
+    </div>
+</nav>
+
+<div id="body-wrap">
+    <div class="cinema-wrap">
+        <div class="cinema-block">
+
+            <div class="cinema-info">
+                <div class="title line-ellipsis">{{title}}</div>
+                <div class="location line-ellipsis">{{cinemadata.addr}}</div>
+                <div class="location-icon" data-bid="dp_wx_cinema_map">
+                    
+                </div>
+            </div>
+
+            <div class="cinemadetail-big">
+                <div class="cinemadetail-nav swiper-container">
+                  <!--   <div class="post-bg"
+                        style="background-image: url('//p0.meituan.net/148.208/movie/7b437e3a0d08d10e374ddc34f71b88fe3379132.jpg');">
+                    </div> -->
+
+                    <div class="post-bg-filter"></div>
+
+                    <div class="swiper-wrapper">
+                        {{each movies}}
+                        <div class="swiper-slide">
+                            <div class="post">
+                                <img src="{{$value.img.replace(/w.h/,'128.180')}}"
+                                    alt="">
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+
+                <div class="cinema-movie-info">
+                    <div class="cinema-movie-title line-ellipsis">
+                        <span class="title">少年的你</span>
+                        <span class="grade">
+                            <span>9.5<span class="small">分</span></span>
+                        </span>
+                    </div>
+                    <div class="cinema-movie-desc line-ellipsis">135分钟 | 爱情 | 周冬雨,易烊千玺,尹昉</div>
+                </div>
+
+                <div class="navdetails-wrap">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

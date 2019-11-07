@@ -1,0 +1,53 @@
+<div class="loginbox">
+
+    <header class="login-navbar">
+        <div class="nav-wrap-left">
+            <div class="loginback">
+                <</div> </div> <h1 class="nav-header">
+                    猫眼电影
+                    </h1>
+    </header>
+
+    <div class="setlogin">
+        <div class="account active-border">
+            <div class="logincontent">
+                美团账号登录
+            </div>
+        </div>
+        <div class="phone">
+            <div class="logincontent">
+                手机验证登录
+            </div>
+        </div>
+    </div>
+
+    <div class="normal-login-form">
+
+        <div class="login-list">
+            <div class="visibale">
+                <div class="username">
+                    <input type="text" id="inp-username" placeholder="账户名/手机号/Email"/>
+                </div>
+                <div class="password">
+                    <input type="password" id="inp-password" placeholder="请输入您的密码"/>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="btn-wrapper">
+            <button type="submit" class="login-btn">登录</button>
+        </div>
+
+        <div class="login-subline">
+            <div><a class="register-now">立即注册</a></div>
+            <div><a>找回密码</a></div>
+        </div>
+
+        <div class="kefu">
+            &copy;猫眼电影 客服电话：
+            <a>400-670-5335</a>
+        </div>
+    </div>
+
+</div>

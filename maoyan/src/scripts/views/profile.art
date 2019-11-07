@@ -1,0 +1,56 @@
+<div class="box">
+
+    <div class="header">
+        <img src="https://img.meituan.net/maoyanuser/350bff22b2ac2c7e5b11937b8dc8f9d212207.png" alt="">
+    </div>
+
+    <div class="container">
+        <div class="group">
+            <div class="order">
+                <div class="title">我的订单</div>
+                <div class="listtwo">
+                    <div class="order-movie">
+                        <img src="/assets/images/yinpian.png" alt="">
+                        <a class="a-movie">
+                            <p>电影</p>
+                        </a>
+                    </div>
+                    <div class="order-store">
+                            <img src="/assets/images/shopping.png" alt="">
+                        <a class="a-movie">
+                            <p>商城</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="group">
+            <div class="outline">
+                <div class="item">
+                    <a>
+                        <span>在线观影</span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a>
+                        <span>优惠券</span>
+                    </a>
+
+                </div>
+                <div class="item">
+                    <a>
+                        <span>折扣卡</span>
+                    </a>
+                </div>
+
+                <div class="item loginout">
+                    <a>
+                        <span>退出</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

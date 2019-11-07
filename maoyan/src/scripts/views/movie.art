@@ -1,0 +1,19 @@
+<div class="navlist">
+
+</div>
+<a class="down-tip" data-load="download"></a>
+<div class="list-container-box">
+    <!-- 大盒子 -->
+    <div class="list-container">
+        <div class="list-move">
+            <div class="moveslist">
+                
+            </div>
+        </div>
+        <div class="foot">
+            <img src="/assets/images/arrow.png" />
+            <b>上拉加载更多...</b>
+        </div>
+
+    </div>
+</div>

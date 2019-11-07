@@ -1,0 +1,104 @@
+<div class="big-city">
+    <div class="move-city">
+
+        <div class="city-head">
+            <div class="city-title">
+                定位城市
+            </div>
+            <div class="city-position">
+                <div class="city-fail">定位失败，请点击重试</div>
+            </div>
+        </div>
+
+        <div class="city-now">
+            <div class="now-title">
+                最近访问城市
+            </div>
+            <div class="city-position">
+                <div class="city-nowlist">
+                    {{each historycity}}
+                    <div class="city-item" data-id="{{$value.cityids}}">{{$value.citynames}}</div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+
+        <div class="city-hot">
+            <div class="city-padding">
+                <div class="city-hot-title">
+                    热门城市
+                </div>
+                <div class="city-hotlist">
+                    <div class="city-hotitem" data-id="10">
+                        上海
+                    </div>
+                    <div class="city-hotitem" data-id="1">
+                        北京
+                    </div>
+                    <div class="city-hotitem" data-id="20">
+                        广州
+                    </div>
+                    <div class="city-hotitem" data-id="30">
+                        深圳
+                    </div>
+                    <div class="city-hotitem" data-id="57">
+                        武汉
+                    </div>
+                    <div class="city-hotitem" data-id="40">
+                        天津
+                    </div>
+                    <div class="city-hotitem" data-id="42">
+                        西安
+                    </div>
+                    <div class="city-hotitem" data-id="55">
+                        南京
+                    </div>
+                    <div class="city-hotitem" data-id="50">
+                        杭州
+                    </div>
+                    <div class="city-hotitem" data-id="59">
+                        成都
+                    </div>
+                    <div class="city-hotitem" data-id="45">
+                        重庆
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="city-list-box">
+            
+        </div>
+    </div>
+
+</div>
+
+<section class="city-nav">
+    <div class="nav-item" data-id="locate">定位</div>
+    <div class="nav-item" data-id="history">最近</div>
+    <div class="nav-item" data-id="hot">热门</div>
+    <div class="nav-letter  nav-item" data-id="A">A</div>
+    <div class="nav-letter  nav-item" data-id="B">B</div>
+    <div class="nav-letter  nav-item" data-id="C">C</div>
+    <div class="nav-letter  nav-item" data-id="D">D</div>
+    <div class="nav-letter  nav-item" data-id="E">E</div>
+    <div class="nav-letter  nav-item" data-id="F">F</div>
+    <div class="nav-letter  nav-item" data-id="G">G</div>
+    <div class="nav-letter  nav-item" data-id="H">H</div>
+    <div class="nav-letter  nav-item" data-id="J">J</div>
+    <div class="nav-letter  nav-item" data-id="K">K</div>
+    <div class="nav-letter  nav-item" data-id="L">L</div>
+    <div class="nav-letter  nav-item" data-id="M">M</div>
+    <div class="nav-letter  nav-item" data-id="N">N</div>
+    <div class="nav-letter  nav-item" data-id="P">P</div>
+    <div class="nav-letter  nav-item" data-id="Q">Q</div>
+    <div class="nav-letter  nav-item" data-id="R">R</div>
+    <div class="nav-letter  nav-item" data-id="S">S</div>
+    <div class="nav-letter  nav-item" data-id="T">T</div>
+    <div class="nav-letter  nav-item" data-id="W">W</div>
+    <div class="nav-letter  nav-item" data-id="X">X</div>
+    <div class="nav-letter  nav-item" data-id="Y">Y</div>
+    <div class="nav-letter  nav-item" data-id="Z">Z</div>
+</section>

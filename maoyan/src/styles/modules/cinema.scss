@@ -1,0 +1,392 @@
+.cinema-topbar {
+    width: 100%;
+    height: .44rem;
+    background: #f5f5f5;
+    flex: 1;
+    position: fixed;
+    top: .505rem;
+    z-index: 999;
+
+    .gray-by {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .city-entry {
+            width: .624rem;
+            height: .2rem;
+            padding-left: .15rem;
+            font-size: .15rem;
+            color: #666;
+            display: flex;
+            align-items: center;
+
+            .city {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .jiao {
+                font-size: .04rem;
+                color: #b0b0b0;
+            }
+        }
+
+        .search-entry {
+            flex: 1;
+            height: .29rem;
+            display: flex;
+            background-color: #fff;
+            justify-content: center;
+            align-items: center;
+            font-size: .13rem;
+            color: #b2b2b2;
+            margin-left: .18rem;
+            border: .5px solid #e6e6e6;
+            border-radius: .05rem;
+            margin-right: .15rem;
+
+            img {
+                width: .14rem;
+                height: .14rem;
+                margin-left: .03rem;
+                margin-right: .04rem;
+            }
+        }
+    }
+}
+
+.cinema-moviepage {
+    width: 100%;
+    height: .4rem;
+    color: #777;
+    background: #fff;
+    position: fixed;
+    top: .905rem;
+    z-index: 999;
+
+    .page-wrap {
+        flex: 1;
+        display: flex;
+        height: .4rem;
+        margin-right: .134rem;
+
+        .line-b {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            .item {
+                flex: 1;
+                height: 100%;
+                text-align: center;
+                line-height: .4rem;
+                font-size: .13rem;
+                color: #b0b0b0;
+            }
+        }
+    }
+}
+
+
+.cinema-list-box {
+    height: 100%;
+    margin-bottom: .48rem;
+
+    .cinema-box {
+        width: 100%;
+        background: #fff;
+
+        .mark {
+            width: 100%;
+            height: .905rem;
+        }
+
+        .cinema-list-warp {
+            width: 100%;
+            @include border(1px 0 0 0, #ccc);
+            background: #fff;
+
+            .list-line {
+                flex: 1;
+                height: 1.24rem;
+                margin-right: .134rem;
+                margin-left: 15px;
+                padding: .13rem .15rem .13rem 0;
+                overflow: hidden;
+
+                .title-block {
+                    width: 100%;
+                    height: .94rem;
+
+                    .title {
+                        width: 100%;
+                        height: .23rem;
+                        line-height: .23rem;
+                        font-size: .16rem;
+                        color: #000;
+                        display: flex;
+
+                        .cinema-name {
+                            width: 60%;
+                            display: block;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+
+                        .price-block {
+                            display: block;
+                            color: #f03d37;
+                            font-size: .18rem;
+
+                            .q {
+                                font-size: .16rem;
+                            }
+                        }
+                    }
+
+                    .locationbox {
+                        width: 100%;
+                        height: .192rem;
+                        line-height: .192rem;
+                        display: flex;
+                        font-size: .13rem;
+                        color: #666;
+
+                        .line-ellipsis {
+                            flex: 1;
+                            width: 100%;
+                            height: .192rem;
+                            line-height: .192rem;
+                            @include ellipsis(null, 1);
+                        }
+
+                        .distance {
+                            width: .368rem;
+                            height: .192rem;
+                            line-height: .192rem;
+                            margin-left: .05rem;
+                        }
+                    }
+
+                    .label-block {
+                        width: 100%;
+                        height: .17rem;
+                        line-height: .17rem;
+                        display: flex;
+                        margin-top: .04rem;
+                        margin-bottom: .04rem;
+                        overflow: hidden;
+                        font-size: 0;
+
+                        .allowRefund {
+                            width: .17rem;
+                            height: .17rem;
+                            text-align: center;
+                            line-height: .17rem;
+                            color: #589daf;
+                            border: 1px solid #589daf;
+                            display: block;
+                            border-radius: .02rem;
+                            font-size: .096rem;
+                        }
+
+                        .endorse {
+                            width: .272rem;
+                            height: .17rem;
+                            text-align: center;
+                            line-height: .17rem;
+                            margin-left: .05rem;
+                            padding: 0 .03rem;
+                            color: #589daf;
+                            border: 1px solid #589daf;
+                            font-size: .096rem;
+                        }
+
+                        .snack {
+                            width: .272rem;
+                            height: .17rem;
+                            text-align: center;
+                            line-height: .17rem;
+                            color: #f90;
+                            border: 1px solid #f90;
+                            font-size: .096rem;
+                            margin-left: 5px;
+                        }
+
+                        .vipTap {
+                            width: .368rem;
+                            height: .17rem;
+                            text-align: center;
+                            line-height: .17rem;
+                            color: #f90;
+                            border: 1px solid #f90;
+                            font-size: .096rem;
+                            margin-left: 5px;
+                        }
+
+
+                    }
+
+                    .discount-block {
+                        width: 100%;
+                        height: .208rem;
+
+                        .normal {
+                            width: 100%;
+                            height: .208rem;
+                            line-height: .208rem;
+                            display: flex;
+                            align-items: center;
+                            font-size: .11rem;
+
+                            .card {
+                                img {
+                                    display: block;
+                                    width: .15rem;
+                                    height: .14rem;
+                                    margin-right: .05rem;
+                                }
+                            }
+
+                            .text {
+                                color: #999;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.cinema-city-list {
+    width: 100%;
+
+    .close-tab {
+        width: 100%;
+        height: 5.48rem;
+        background: #f00;
+        display: none;
+        position: fixed;
+        top: 1.34rem;
+        z-index: 100;
+
+        .tab-content {
+            height: 100%;
+
+            .page-region {
+                background-color: #fff;
+                overflow: hidden;
+                z-index: 999;
+                width: 100%;
+                height: 100%;
+
+                #region-tab {
+                    height: .44rem;
+
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+
+                        li {
+                            position: relative;
+                            display: inline-block;
+                            padding: 0 10px;
+                            width: 50%;
+                            height: 100%;
+                            line-height: 44px;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                #region-list {
+                    width: 100%;
+                    height: 100%;
+
+                    #region-sidenav {
+                        width: 35%;
+                        height: 5rem;
+                        float: left;
+                        overflow-y: scroll;
+
+                        #district {
+                            background: #fff;
+                           
+                            .district-li {
+                                height: .44rem;
+                                padding-left: .1rem;
+                                padding-right: .15rem;
+                                line-height: .44rem;
+                                font-size: 14px;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                            }
+
+                        }
+                    }
+
+                    #region-list-item {
+                        width: 65%;
+                        height: 100%;
+                        float: right;
+                        overflow: scroll;
+
+                        #filter-list {
+                            background: #f5f5f5;
+
+                            .filter-item {
+                                position: relative;
+                                height: 45px;
+                                line-height: 45px;
+                                padding: 0 0 0 25px;
+                                .filter-chosen{
+                                    color: #f00;
+                                }
+
+                                .item-name {
+                                    width: 80%;
+                                    font-size: 14px;
+                                    color: #333;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                }
+
+                                .item-count {
+                                    float: right;
+                                    width: 20px;
+                                    margin-right: 10px;
+                                    color: #8f9296;
+                                    font-size: 12px;
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+    }
+}
+
+.chosen {
+    color: #f00;
+    border-bottom: 2px solid #f00;
+}
+
+.item-chosen {
+    color: #f03d37;
+    background: #f5f5f5;
+}

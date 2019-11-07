@@ -1,0 +1,198 @@
+.line-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+element.style {
+    transform: translate3d(0px, 0px, 0px);
+    transition-duration: 0ms;
+}
+
+.navbar {
+    height: .505rem;
+    color: #fff;
+    background: #e54847;
+    border-bottom: 1px solid #e54847;
+    position: relative;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+
+    .back {
+        width: .525rem;
+        height: .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .4rem;
+        font-family: '宋体';
+    }
+
+    .nav-header {
+        flex: 1;
+        font-size: .18rem;
+        margin-right: .525rem;
+        display: flex;
+        justify-content: center;
+        font-weight: 100;
+    }
+}
+
+.download-app-bar {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#body-wrap {
+    margin-bottom: .25rem;
+
+    .cinema-wrap {
+        background: #fff;
+
+        .cinema-info {
+            padding: .15rem;
+            padding-right: 1rem;
+            position: relative;
+
+            .title {
+                font-size: .17rem;
+                line-height: .24rem;
+                font-weight: 700;
+                color: #333;
+            }
+
+            .location {
+                margin-top: .02rem;
+                font-size: .13rem;
+                line-height: .185rem;
+                color: #999;
+            }
+
+            .location-icon {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                width: 70px;
+                height: 31px;
+                transform: translateY(-50%);
+                border-left: 1px solid #d8d8d8;
+                text-align: center;
+
+                img {
+
+                    display: inline-block;
+                    width: 19px;
+                    height: 22px;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .cinemadetail-big {
+
+            .cinemadetail-nav {
+                padding: .2rem 0;
+                padding-left: .05rem;
+                padding-right: .15rem;
+
+                .post-bg {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    overflow: hidden;
+                    -webkit-filter: blur(30px);
+                    filter: blur(30px);
+                    background-position-y: 40%;
+                }
+
+                .post-bg-filter {
+                    height: 100%;
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    background-color: #40454d;
+                    opacity: .55;
+                }
+            }
+
+            .swiper-container {
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+
+                .swiper-wrapper {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    display: flex;
+                    box-sizing: content-box;
+                    transition-property: transform, -webkit-transform;
+
+                    .swiper-slide {
+                        width: .75rem !important;
+                        height: .95rem;
+                        margin-left: .15rem;
+                        position: relative;
+                        flex-shrink: 0;
+
+                        .post {
+                            width: 75px;
+                            border: 2px solid #fff;
+
+                            img {
+                                height: .95rem;
+                            }
+                        }
+
+                        .post:after {
+                            content: "";
+                            position: absolute;
+                            bottom: -6px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 10px;
+                            height: 5px;
+                          
+                            background-size: contain;
+                        }
+                    }
+                }
+            }
+
+            .cinema-movie-info {
+                padding: 11px 15px;
+                text-align: center;
+
+                .cinema-movie-title {
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 17px;
+                    color: #333;
+                    font-weight: 700;
+                    .grade {
+                        color: #ffb400;
+                        font-size: 16px;
+                    }
+                }
+
+                .cinema-movie-desc {
+                    margin-top: 2px;
+                    height: 18.5px;
+                    line-height: 18.5px;
+                    font-size: 13px;
+                    color: #999;
+                }
+            }
+
+
+
+        }
+    }
+}

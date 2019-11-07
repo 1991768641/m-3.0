@@ -1,0 +1,492 @@
+@keyframes run {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.down-tip {
+    display: none;
+    position: fixed;
+    right: 16px;
+    bottom: 100px;
+    width: 64px;
+    height: 90px;
+    background: url('../../assets/images/app.png') no-repeat center;
+    background-size: 100% 100%;
+    z-index: 100;
+}
+
+
+.line-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.detailbox {
+    width: 100%;
+    height: 100%;
+
+    .movebox {
+        width: 100%;
+        
+        .navbar {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: .505rem;
+            background: #e54847;
+            color: #fff;
+            @include border(0 0 1px 0, #e54847);
+
+            .back {
+                width: .525rem;
+                height: 100%;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: .4rem;
+                font-family: '宋体';
+            }
+
+            .nav-header {
+                flex: 1;
+                margin-right: .505rem;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: .18rem;
+                font-weight: 100;
+            }
+        }
+
+        .total-body {
+            height: .61rem;
+            background: #fff;
+
+            .download-header {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                .logo-img {
+                    width: .42rem;
+                    height: .42rem;
+                    margin: 0 .06rem 0 .11rem;
+                    background: url('./../../assets/images/logo.png') no-repeat center;
+                    background-size: 100% 100%;
+                }
+
+                .info-wrapper {
+                    flex: 1;
+
+                    .title {
+                        color: #333;
+                        font-size: .15rem;
+                        margin: 0 0 .01rem;
+                        font-weight: 600;
+                    }
+
+                    .content {
+                        color: #666;
+                        font-size: .11rem;
+                    }
+                }
+
+                .link-btn {
+                    width: .96rem;
+                    height: .42rem;
+                    color: #fff;
+                    font-size: .13rem;
+                    background: #f03d37;
+                    border-radius: .22rem;
+                    margin-right: .06rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .wordafter {
+                        width: .19rem;
+                        height: .19rem;
+                        background: url('./../../assets/images/jinbi.png') no-repeat center;
+                        animation: run infinite 2s linear;
+                        background-size: 100% 100%;
+                        margin-left: .05rem;
+                    }
+                }
+            }
+
+        }
+
+        .movie-detail {
+            flex: 1;
+            width: 100%;
+            height: 1.88rem;
+            position: relative;
+
+            .movie-filter {
+                position: absolute;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                background: #333;
+            }
+
+            .poster-bg {
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                overflow: hidden;
+                position: absolute;
+                background: url('http://p0.meituan.net/71.100/movie/cddf92d0ac6a0db837a1bc488b241c42267927.jpg') no-repeat;
+                background-size: cover;
+                opacity: .55;
+                filter: blur(20px);
+            }
+
+            .detailflex-box {
+                flex: 1;
+                height: 100%;
+                display: flex;
+                padding: .19rem .3rem .19rem .15rem;
+
+                .poster {
+                    width: 1.1rem;
+                    height: 1.5rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        box-sizing: border-box;
+                    }
+
+                }
+
+                .contentflex {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    height: 1.5rem;
+                    margin-left: .15rem;
+                    color: #fff;
+                    font-size: .14rem;
+
+                    .title-one {
+                        width: 100%;
+                        font-size: .2rem;
+                        font-weight: 700;
+                        overflow: hidden;
+                        margin-top: .01rem;
+                    }
+
+                    .title-two {
+                        width: 100%;
+                        font-weight: 100;
+                        font-size: .12rem;
+                        margin-top: .05rem;
+                        color: #fff;
+                    }
+
+                    .score {
+                        width: 100%;
+                        font-size: .18rem;
+                        font-weight: 700;
+                        margin-top: .05rem;
+                        color: #fc0;
+
+                        .snum {
+                            margin-top: .1rem;
+                            font-size: .12rem;
+                            color: #fff;
+                        }
+                    }
+
+                    .type {
+                        width: 100%;
+                        margin-top: .05rem;
+                        font-weight: 100;
+                        display: flex;
+
+                        span {
+                            font-size: .12rem;
+                            color: #fff;
+                        }
+
+                        .type-group {
+                            display: inline-block;
+                            width: .42rem;
+                            opacity: .85;
+
+                            img {
+                                width: .26rem;
+                            }
+                        }
+                    }
+
+                    .src {
+                        width: 100%;
+                        margin-top: .05rem;
+                        font-weight: 100;
+                        font-size: .12rem;
+                    }
+
+                    .pubdesc {
+                        width: 100%;
+                        margin-top: .05rem;
+                        font-weight: 100;
+                        font-size: .12rem;
+                    }
+                }
+
+            }
+
+            .arrow-g {
+                position: absolute;
+                width: .1rem;
+                right: .15rem;
+                top: 44%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .show-day {
+            width: 100%;
+            height: .45rem;
+            overflow: hidden;
+            background-color: #fff;
+            @include border(0 0 1px 0, #ccc);
+
+            .itemtime {
+                width: 200%;
+                padding: 0;
+                margin: 0;
+                height: .45rem;
+                white-space: nowrap;
+                display: flex;
+                color: #666;
+
+                .showDay {
+                    width: 1.15rem;
+                    margin-left: .045rem;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .chosen {
+                    color: #f03d37;
+                    border-bottom: 2px solid #f03d37;
+                }
+            }
+        }
+
+        .nav-wrap {
+            width: 100%;
+            height: .4rem;
+            background: #fff;
+            @include border(0 0 1px 0, #ccc);
+
+            .tab {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-items: center;
+                align-items: center;
+
+                .item {
+                    flex: 1;
+                    height: 100%;
+                    text-align: center;
+                    line-height: .4rem;
+                    color: #777;
+                    font-size: .13rem;
+                }
+
+            }
+
+            .close-tab {
+                display: none;
+            }
+
+        }
+
+        .cinema-list {
+            width: 100%;
+            height: 100%;
+            color: #777;
+            background: #fff;
+
+            .detail-list-wrap {
+                width: 100%;
+                height: 100%;
+
+                .item {
+                    height: 1.168rem;
+                    margin-left: .15rem;
+                    padding: .13rem .15rem .13rem 0;
+                    background-color: #fff;
+                    overflow: hidden;
+
+                    .title-block {
+                        width: 100%;
+                        height: .692rem;
+                        display: block;
+
+                        .title {
+                            width: 100%;
+                            height: .23rem;
+                            line-height: .23rem;
+                            font-size: .16rem;
+                            color: #000;
+                            display: flex;
+
+                            .dian {
+                                display: block;
+                                height: 100%;
+                                margin-right: .1rem;
+                            }
+
+                            .price-block {
+                                flex: 1;
+                                display: block;
+                                color: #f03d37;
+                                font-size: .18rem;
+                                height: 100%;
+
+                                .price {
+                                    width: .36rem;
+                                    height: 100%;
+                                }
+
+                                .q {
+                                    font-size: .11rem;
+                                    margin-left: .015rem;
+                                }
+                            }
+                        }
+
+                        .location-block {
+                            width: 100%;
+                            height: .192rem;
+                            margin-top: .03rem;
+                            font-size: .13rem;
+                            color: #666;
+                            display: flex;
+
+                            .flex {
+                                flex: 1;
+                                height: 100%;
+                            }
+
+                            .distance {
+                                width: .488rem;
+                                height: 100%;
+                                text-align: right;
+                            }
+
+                        }
+
+                        .label-block {
+                            height: .17rem;
+                            line-height: .17rem;
+                            margin-top: .04rem;
+                            margin-bottom: .04rem;
+                            overflow: hidden;
+                            display: flex;
+                            font-size: 0;
+                            flex-shrink: 0;
+
+                            .allowRefund {
+                                height: .17rem;
+                                display: block;
+                                padding: 0 .03rem;
+                                font-size: .096rem;
+                                color: #589daf;
+                                @include border(1px, #589daf);
+                            }
+
+                            .endorse {
+                                height: .17rem;
+                                padding: 0 .03rem;
+                                font-size: .096rem;
+                                color: #589daf;
+                                margin-left: .05rem;
+                                @include border(1px, #589daf);
+                            }
+
+                            .snack {
+                                height: .17rem;
+                                padding: 0 .03rem;
+                                font-size: .096rem;
+                                color: #f90;
+                                margin-left: .05rem;
+                                @include border(1px, #f90);
+                            }
+
+                            .vipTag {
+                                height: .17rem;
+                                padding: 0 .03rem;
+                                font-size: .096rem;
+                                color: #f90;
+                                margin-left: .05rem;
+                                @include border(1px, #f90);
+                            }
+
+                            .hallType {
+                                height: .17rem;
+                                padding: 0 .03rem;
+                                font-size: .096rem;
+                                color: #589daf;
+                                margin-left: .05rem;
+                                @include border(1px, #589daf);
+                            }
+                            
+                            .displaynone{
+                                display: none;
+                            }
+                        }
+
+                    }
+
+                    .min-show {
+                        width: 100%;
+                        height: .176rem;
+                        padding: 0 .15rem 0 0;
+                        margin-right: -.15rem;
+                        margin-top: .05rem;
+                        display: flex;
+                        font-size: 12px;
+                        color: #999;
+
+                        .time-line {
+                            width: 100px;
+                            height: .176rem;
+                            display: block;
+                            margin-left: .140rem;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+
+}

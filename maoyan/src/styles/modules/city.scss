@@ -1,0 +1,170 @@
+.big-city {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    .move-city {
+        width: 100%;
+
+        .city-head {
+            padding-right: .1rem;
+
+            .city-title {
+                height: .3rem;
+                padding-left: 15px;
+                line-height: .3rem;
+            }
+
+            .city-position {
+                width: 100%;
+                height: .56rem;
+                background: #f5f5f5;
+                display: flex;
+                align-items: center;
+
+                .city-fail {
+                    width: auto;
+                    min-width: 30%;
+                    padding: 0 20px;
+                    height: .33rem;
+                    font-size: .14rem;
+                    background: #fff;
+                    line-height: .33rem;
+                    margin-left: 4%;
+                }
+
+            }
+        }
+
+        .city-now {
+            height: .856rem;
+            padding-right: .1rem;
+
+            .now-title {
+                height: .3rem;
+                line-height: .3rem;
+                padding-left: .15rem;
+            }
+
+            .city-position {
+                width: 100%;
+                height: .56rem;
+                background: #f5f5f5;
+
+                .city-nowlist {
+                    padding-right: .3rem;
+                    height: 100%;
+
+                    .city-item {
+                        float: left;
+                        background: #fff;
+                        width: 29%;
+                        height: 33px;
+                        margin-top: 15px;
+                        margin-left: 4%;
+                        padding: 0 4px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 3px;
+                        line-height: 33px;
+                        text-align: center;
+                        box-sizing: border-box;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+
+            }
+        }
+
+        .city-hot {
+            width: 100%;
+            height: 2.296rem;
+
+            .city-padding {
+                padding-right: .1rem;
+
+                .city-hot-title {
+                    height: .296rem;
+                    padding-left: 15px;
+                    line-height: 30px;
+                }
+
+                .city-hotlist {
+                    padding-right: .3rem;
+                    height: 2rem;
+                    background: #f5f5f5;
+
+                    .city-hotitem {
+                        float: left;
+                        background: #fff;
+                        width: 29%;
+                        height: 33px;
+                        margin-top: 15px;
+                        margin-left: 4%;
+                        padding: 0 4px;
+                        border: 1px solid #e6e6e6;
+                        border-radius: 3px;
+                        line-height: 33px;
+                        text-align: center;
+                        box-sizing: border-box;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+
+        }
+
+        .city-list-box {
+            padding-right: .1rem;
+            height: 100%;
+
+            .city-item-box {
+                color: #333;    
+                .city-title {
+                    height: .3rem;
+                    padding-left: .25rem;
+                    line-height: .3rem;
+                    font-size: .14rem;
+                    color: #333;
+                    font-weight: 600;
+                }
+
+                .city-list {
+                    padding-right: .3rem;
+                    background: #f5f5f5;
+
+                    .city-item {
+                        width: 100%;
+                        height: .44rem;
+                        line-height: .44rem;
+                        margin-left: .15rem;
+                        font-size: .14rem;
+                        color: #333;
+                        @include border(0 0 1px 0, #c8c7cc);
+
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.city-nav {
+    width: .35rem;
+    height: 5.15rem;
+    position: fixed;
+    top: 11vh;
+    right: 0;
+    z-index: 10;
+    font-size: 12px;
+    text-align: right;
+
+    .nav-item {
+        width: .35rem;
+
+    }
+}

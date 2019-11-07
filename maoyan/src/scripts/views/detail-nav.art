@@ -1,0 +1,61 @@
+{{each list}}
+<div class="item" data-detailid="{{$value.id}}">
+
+    <div class="title-block">
+        <div class="title line-ellipsis">
+            <span class="dian">{{$value.nm}}</span>
+            <span class="price-block">
+                <span class="price">{{$value.sellPrice}}</span><span class="q">元起</span>
+            </span>
+        </div>
+        <div class="location-block">
+            <div class="flex line-ellipsis">{{$value.addr}}</div>
+            <div class="distance">{{$value.distance}}</div>
+        </div>
+        <div class="label-block">
+            {{if($value.tag.allowRefund==1)}}
+            <div class="allowRefund">
+                退
+            </div>
+            {{eles}}
+            <div class="displaynone"></div>
+            {{/if}}
+
+            {{if($value.tag.endorse==1)}}
+            <div class="endorse">改签</div>
+            {{eles}}
+            <div class="displaynone"></div>
+            {{/if}}
+
+
+            {{if($value.tag.snack==1)}}
+            <div class="snack">小吃</div>
+            {{eles}}
+            <div class="displaynone"></div>
+            {{/if}}
+
+            {{if($value.tag.vipTag!=null)}}
+            <div class="vipTag">折扣卡</div>
+            {{eles}}
+            <div class="displaynone"></div>
+            {{/if}}
+            {{if($value.tag.hallType!=null)}}
+            <div class="hallType">CGS中国巨幕厅</div>
+            <div class="hallType">杜比全景声厅</div>
+            <div class="hallType">RealD 6FL厅</div>
+            {{eles}}
+            <div class="displaynone"></div>
+            {{/if}}
+        </div>
+    </div>
+
+    <div class="min-show">
+        近期场次:
+        <span class="time-line">
+            场次?不存在的
+        </span>
+
+    </div>
+
+</div>
+{{/each}}

@@ -1,0 +1,75 @@
+
+{{if list}}
+<div class="result">
+    <h3>电影/电视剧/综艺</h3>
+    <div class="list">
+        {{each list}}
+        <div class="moviecell" data-id="{{$value.id}}">
+            <img class="poster" src="{{$value.img.replace(/w.h/,'128.180')}}" alt="">
+            <div class="info">
+
+                <div class="name-score">
+                    <p class="name">
+                        <span class="one-line">{{$value.nm}}</span>
+                        <span class="version v2d imax"></span>
+                    </p>
+                    <span class="score">
+                        <span class="num">{{$value.sc}}</span>分
+                    </span>
+                </div>
+
+                <div class="detail-section">
+                    <div class="detail-items">
+                        <p class="ename one-line">{{$value.enm}}</p>
+                        <p class="catogary">{{$value.cat}}</p>
+                        <p class="release">{{$value.rt}}</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        {{/each}}
+    </div>
+    <div class="more-result" data-target="movies" data-total="478">查看全部{{moviestotal.total}}部影视剧</div>
+</div>
+{{else}}
+<div></div>
+{{/if}}
+
+{{if list1}}
+<div class="result1">
+    <h3>影院</h3>
+    <div class="list1">
+        {{each list1}}
+        <div class="cinema cell" data-id="15068">
+            <div class="info">
+                <p class="name-price">
+                    <span class="name one-line">{{$value.nm}}</span>
+                    <span class="sell-price">
+                        <span class="price">{{$value.sellPrice}}</span>
+                        元起
+                    </span>
+                </p>
+                <p class="address one-line">{{$value.addr}}</p>
+                <p class="feature-tags">
+                    <span>座</span>
+                    <span>杜比全景声厅</span>
+                    <span>4K厅</span>
+                    <span>4D厅</span>
+                    <span>巨幕厅</span>
+                    <span>改签</span>
+                    <span class="featrue">小吃</span>
+                </p>
+            </div>
+            <div class="distance">{{$value.distance}}</div>
+        </div>
+        {{/each}}
+
+        <div class="more-result" data-target="cinemas" data-total="4">查看全部{{cinemastotal.total}}家电影院</div>
+    </div>
+
+</div>
+{{else}}
+<div></div>
+{{/if}}

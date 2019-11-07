@@ -1,0 +1,57 @@
+<header class="navbar">
+    <div class="back">
+        <</div> <h1 class="nav-header">{{detailitem.nm}}</h1>
+</header>
+
+<div class="total-body">
+    <div class="download-header">
+        <div class="logo-img"></div>
+        <div class="info-wrapper">
+            <div class="title">猫眼</div>
+            <div class="content">0 元看电影，天天领现金</div>
+        </div>
+        <div class="link-btn">立即领取
+            <div class="wordafter"></div>
+        </div>
+    </div>
+</div>
+
+<div class="movie-detail">
+    <div class="movie-filter"></div> <!-- 背景颜色 -->
+    <div class="poster-bg"></div> <!-- 背景图片 -->
+
+    <div class="detailflex-box">
+        <div class="poster">
+            <img src="{{detailitem.img.replace(/w.h/,'128.180')}}" alt="">
+        </div>
+
+        <div class="contentflex">
+            <div class="title-one line-ellipsis">{{detailitem.nm}}</div>
+            <div class="title-two line-ellipsis">{{detailitem.enm}}</div>
+
+            <div class="score">
+                {{detailitem.sc}}
+
+                <span class="snum line-ellipsis">({{(detailitem.snum/10000).toFixed(1)}}万人评)</span>
+            </div>
+            <div class="type">
+                <span>{{detailitem.cat}}</span>
+
+                <div class="type-group">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAeCAYAAABwmH1PAAACn0lEQVRYhe2ZUW7TQBCGv0RBrUSl+KW8po/lqTkAknOBCN+gewPCDdwbmBuYGwRxAILEAZoneHRf6QNBAgmJSsvDjOu18TqWnBLV5JdW68zMemd2Z2bH2YG1FuAp8Bw4BUb0C3fALfAZ+Dmw1p4AL4Ane1Xr4fEb+DQCzhFjvwJr4Nc+tXoAHAMXwDPgfIi4MfTTWBCb1vp8OqSI2T4amyO3bTTcqxp7wMHgvqONwVNgBRiHliht0WJ8pLKJhx8ofwXMGuZfqmwdlg3jy7DWzrXhaTMriB3aSmmbhnF5y1R25eEbW2DpkUka+E08t82ttfOuLj2mvPNVRMBkyztyL/kIvATOPDJr5bvzzYBXwM0WPe7R1eDvQNzA3+byU6QoeEvh8sYja3S+BFmUAHFlkIXdbJkL6G5wguxgVMObASFijA/5gqSI8k07da3yY5Vd6vNr5bVCV4NT7et20mgfe8YGyELdIAknf98Ev9EpsoAXyGK+w58Ma9HV4EwVCClnyDPgEonLzDM2QnbIVTjV3jTMufQ8t8IuzuFYe+PQFhVe07jUoWXIIoXUJ6/AkXfjuTV2YXCGKHlJkUwMklVXnjEziuz9DbBOC5VeFyZ53F5RjufW2NXHfgx8UCU2/O2qVRjt31CfXRcqs6jQQmRxY6VFyFGV0K4I6lx4VAuMjfZZhecWHoH+rsrUFRNGf0+dQufMkQucwib6F4WHixjZ2QnluKzCaN/kAe6Z7J63hnIS3FAciSn+0vMeuzQ4RY6YPJn4kLteU+xlSA4IVW6CnAZ1Y66RmB7TvNAADKy1c31+v034kWMOh8/D/uNgcN8xRP6ZB/n/tq840v5uiFxDgHyBHNXLP2ocI9/dALf/3VXLwMpl2gly5dLny7QvwI8/pysRaQplMrsAAAAASUVORK5CYII="
+                        alt="">
+                </div>
+
+            </div>
+            <div class="src line-ellipsis">{{detailitem.src}}/{{detailitem.dur}}分钟</div>
+            <div class="pubdesc line-ellipsis">{{detailitem.pubDesc}}</div>
+        </div>
+
+    </div>
+
+    <div class="arrow-g">
+        <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAWCAYAAAAfD8YZAAAAAXNSR0IArs4c6QAAAS5JREFUOBGVkktuwkAMhpOoJ+hhSouE2HbDgiVCNCAOVtQHnINHhbgMJ6g6/f9gR848kmDJeOzxZ3scskzEOfcKXUMLjXXZByYQhJlqMvz3PM//1E9Z7fJoEp5wXvWZoILRZQtg7xVYdhXQzuR2XoEB/NYCOSkVdKI/g441BnuBbmI7aMAE7ilgxyaboYOD4RMO9EWiTwhgJksBLtEvUNolRmGvwJG+yDNsXSB4s2aplR3M4Y80BnuGfiQ7m0Q2qP6JJvaLc/VpTKx5lPe9IfpibviMb+4lOXYXyGLRsRPgSTsSpASdW8Av+YQ3Er+NzgIuELdvZMcAZIUaBsgpCA55IZIEeV+NLSC32hskXCTAH9xFRyWkUsgSrhqAJfjpL8fch0dMMIGWMkmYEIn8Az5Wgp5LHlhmAAAAAElFTkSuQmCC">
+    </div>
+
+</div>

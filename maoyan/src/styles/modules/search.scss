@@ -1,0 +1,350 @@
+.one-line {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.search-history {
+    background-color: #fff;
+
+    .history-item {
+        margin-left: .15rem;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        border-bottom: 1px solid #e5e5e5;
+        line-height:.44rem;
+        -webkit-box-align: center;
+        align-items: center;
+        .history-icon {
+            width: .15rem;
+            height:.15rem;
+            margin-right: .1rem;
+            background: url('/assets/images/clock.png') no-repeat;
+            background-size: contain;
+            display: inline-block;
+            -webkit-box-flex: 0;
+            flex: 0 0 auto;
+        }
+
+        .word {
+            color: #333;
+            font-size: .15rem;
+            flex: 1 1 auto;
+            display: inline-block;
+        }
+        
+        .word:hover{
+            cursor: pointer;
+        }
+
+        .del-word {
+            background-image: url('/assets/images/x.png');
+            background-repeat: no-repeat;
+            background-position: .15rem;
+            background-size:.1rem;
+            align-self: center;
+            padding: .17rem .15rem;
+            width: .1rem;
+            height:.1rem;
+            flex: 0 0 auto;
+        }
+        .del-word:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+    .search-navbar {
+        width: 100%;
+        height: .505rem;
+        color: #fff;
+        background: #e54847;
+        border-bottom: 1px solid #e54847;
+        display: flex;
+
+        .navbar {
+            flex: 1;
+            display: flex;
+            font-size: .18rem;
+            font-weight: 400;
+            text-align: center;
+            line-height: .505rem;
+            margin: 0;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-right: .525rem;
+
+            .back {
+                width: .525rem;
+                height: 50.5px;
+                line-height: 50.5px;
+                font-size: .4rem;
+                font-family: '宋体';
+                font-weight: 900;
+            }
+
+            .nav-header {
+                flex: 1;
+                display: block;
+                font-weight: 100;
+            }
+        }
+    }
+
+
+    .search-wrapper {
+        width: 100%;
+        background-color: #f5f5f5;
+
+        .search-header {
+            display: flex;
+            align-items: center;
+            padding: .08rem 0 .08rem .1rem;
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #e5e5e5;
+            position: relative;
+            z-index: 1;
+
+            .input-wrapper {
+                padding: 0 10px;
+                border: 1px solid #e6e6e6;
+                border-radius: 5px;
+                background-color: #fff;
+                flex-grow: 1;
+                flex: 1;
+                display: flex;
+                align-items: center;
+
+                .search-icon {
+                    width: .15rem;
+                    height: .15rem;
+                    margin-right: .06rem;
+                }
+
+                .search-input {
+                    flex: 1;
+                    width: calc(100% - 40px);
+                    border: none;
+                    font-size: 13px;
+                    color: #333;
+                    line-height: .2rem;
+                    padding: .04rem 0;
+                }
+
+                .del-input {
+                    width: .15rem;
+                    height: .15rem;
+                    display: none;
+                }
+
+            }
+
+            .cancel {
+                width: .52rem;
+                height: .3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: .16rem;
+                color: #f03d37;
+            }
+        }
+
+        .search-history {}
+
+        .search-result {
+            width: 100%;
+
+            .result-wrapper {
+
+                .result,
+                .result1 {
+                    margin-bottom: .1rem;
+                    background-color: #fff;
+
+                    h3 {
+                        font-size: .15rem;
+                        color: #999;
+                        padding: .09rem .15rem;
+                        font-weight: 100;
+                    }
+
+                    .list {
+                        padding-left: .15rem;
+                        border-top: 1px solid #e6e6e6;
+
+                        .moviecell {
+                            width: 100%;
+                            height: 1.15rem;
+                            padding: .12rem 0;
+                            min-height: .9rem;
+                            border-bottom: 1px solid #e6e6e6;
+
+                            .poster {
+                                background-color: #eee;
+                                width: .64rem;
+                                height: .9rem;
+                                float: left;
+                                margin-right: .1rem;
+                            }
+
+                            .info {
+                                margin-right: .15rem;
+                                margin-top: .01rem;
+
+                                .name-score {
+                                    font-size: .16rem;
+                                    color: #222;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-bottom: .02rem;
+
+                                    .name {
+                                        display: flex;
+                                        align-items: center;
+                                        flex-grow: 1;
+                                        max-height: .24rem;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+
+                                        .one-line {
+                                            display: inline-block;
+                                            font-weight: 700;
+                                            font-size: .17rem;
+                                        }
+
+                                    }
+
+                                    .score {
+                                        color: #fa0;
+                                        font-size: .1rem;
+                                        flex-shrink: 0;
+                                        padding-left: .05rem;
+
+                                        .num {
+                                            font-size: .16rem;
+                                        }
+                                    }
+                                }
+
+                                .detail-section {
+                                    position: relative;
+
+                                    .detail-items {
+                                        flex-grow: 1;
+                                        overflow: hidden;
+                                        padding-right: .1rem;
+                                        margin-right: .48rem;
+                                        min-height: .27rem;
+
+                                        .ename,
+                                        .catogary,
+                                        .release {
+                                            font-size: .13rem;
+                                            color: #666;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .more-result {
+                        font-size: .15rem;
+                        color: #ef4238;
+                        line-height: .44rem;
+                        height: .44rem;
+                        text-align: center;
+                    }
+
+                    .list1 {
+                        padding-left: .15rem;
+                        border-top: 1px solid #e6e6e6;
+
+                        .cinema {
+                            width: 100%;
+                            height: 1.04rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: .15rem .15rem .15rem 0;
+                            border-bottom: 1px solid #e6e6e6;
+
+                            .info {
+                                flex: 1;
+                                overflow: hidden;
+
+                                .name-price {
+                                    font-size: .16rem;
+                                    color: #000;
+                                    margin-bottom: .06rem;
+                                    display: flex;
+
+                                    .sell-price {
+                                        font-size: .11rem;
+                                        color: #999;
+                                        white-space: nowrap;
+                                        margin-left: .1rem;
+
+                                        .price {
+                                            font-size: .17rem;
+                                            color: #ef4238;
+                                        }
+                                    }
+                                }
+
+                                .address {
+                                    font-size: .13rem;
+                                    color: #999;
+                                }
+
+                                .feature-tags {
+                                    margin-top: .07rem;
+
+                                    span {
+                                        border: 1px solid #589daf;
+                                        color: #589daf;
+                                        position: relative;
+                                        display: inline-block;
+                                        padding: 0 3px;
+                                        height: .15rem;
+                                        line-height: .15rem;
+                                        border-radius: .02rem;
+                                        font-size: .096rem;
+
+                                    }
+
+                                    .featrue {
+                                        color: #f90;
+                                        border-color: #f90;
+                                    }
+                                }
+                            }
+
+                            .distance {
+                                font-size: .13rem;
+                                color: #999;
+                            }
+                        }
+                    }
+
+                }
+
+
+            }
+
+
+        }
+    }
+
+
+}

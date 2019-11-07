@@ -1,0 +1,16 @@
+
+<div class="city-item-box" data-zimu="A">
+    <div class="title-box">
+        <div class="city-title">
+            
+        </div>
+    </div>
+
+    <div class="city-list">
+        {{each list}}
+            <div class="city-item" data-nm="{{$value.nm}}" data-id="{{$value.id}}" data-py="{{$value.py}}">
+                {{$value.nm}}
+            </div>
+        {{/each}}
+    </div>
+</div>

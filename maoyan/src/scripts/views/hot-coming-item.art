@@ -1,0 +1,40 @@
+
+{{each detailitem}}
+<div class="coming-item" data-id="{{$value.id}}">
+    <p class="group-date">{{$value.comingTitle}}</p>
+
+    <div class="mes-item">
+        <div class="main-block">
+
+            <div class="avatar">
+                <img src="{{$value.img.replace(/w.h/,'128.180')}}" alt="">
+            </div>
+
+            <div class="content-wrap">
+                <div class="column-content">
+                    <div class="hot-title">
+                        <div class="title line-ellipsis ">{{$value.nm}}</div>
+                    </div>
+                    <div class="hot-column">
+                        <div class="wantsee line-ellipsis">
+                            <span class="person">{{$value.wish}}</span>
+                            <span class="p-suffix">人想看</span>
+                        </div>
+                        <div class="actor line-ellipsis">主演: {{$value.star}}</div>
+                        <div class="actor line-ellipsis">{{$value.rt}}上映</div>
+                    </div>
+                </div>
+
+                <div class="button-block" data-id="">
+                    <div class="btn pre" data-id="">
+                        <span class="fix" data-bid="">预售</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+{{/each}}

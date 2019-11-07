@@ -1,0 +1,34 @@
+<div class="body">
+    
+    <div class="search-navbar">
+        <header class="navbar">
+            <div class="back">
+                <</div> <h1 class="nav-header">猫眼电影</h1>
+        </header>
+    </div>
+
+    <div class="search-wrapper">
+
+        <div class="search-header">
+            <div class="input-wrapper">
+                <img class="search-icon" src="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/images/search.png"
+                    alt="">
+                <input class="search-input" type="text" placeholder="搜电影、搜影院">
+                <img class="del-input" src="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/images/close.png" alt="">
+            </div>
+            <div class="cancel">取消</div>
+        </div>
+
+        <div class="search-history" style="display:none">
+            
+        </div>
+
+        <div class="search-result">
+            <div class="result-wrapper">
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
